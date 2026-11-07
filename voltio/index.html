@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electronics Store | Voltio</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main>
+<section class="hero"><div class="container hero-inner">
+ <div><p class="badge">Season sale: up to 30% off</p><h1>Power up your everyday tech.</h1>
+ <p class="lead">Phones, laptops, audio and accessories picked for people who use them all day. Fair prices, fast delivery, no fluff.</p>
+ <div class="hero-cta"><a href="shop.html" class="btn btn-primary">Shop now</a><a href="about.html" class="btn btn-ghost">About Voltio</a></div></div>
+ <img class="hero-img" src="images/hero.svg" alt="A smartphone, headphones and a smartwatch"></div></section>
+<section class="sec container"><div class="sec-head"><h2>Shop by category</h2></div><div class="tiles" id="catTiles"></div></section>
+<section class="sec white"><div class="container"><div class="sec-head"><h2>Best sellers</h2><a href="shop.html">View all products</a></div><div class="grid" id="featured"></div></div></section>
+<section class="sec container"><div class="promo"><div><h2>Take 10% off your first order</h2><p>Enter code VOLT10 in your cart. Free delivery on orders over $100.</p></div><a class="btn btn-primary" href="shop.html">Start shopping</a></div></section>
+<section class="sec container"><div class="sec-head"><h2>New and on sale</h2></div><div class="grid" id="newest"></div></section>
+<section class="sec white"><div class="container trust">
+ <div><h3>Free delivery</h3><p>On every order over $100, shipped in 2 to 4 days.</p></div><div><h3>1-year warranty</h3><p>Every device is covered. No small print.</p></div>
+ <div><h3>30-day returns</h3><p>Changed your mind? Send it back.</p></div><div><h3>Real support</h3><p>Talk to a person, not a chatbot.</p></div></div></section>
+<section class="sec container"><div class="sec-head"><h2>What customers say</h2></div><div class="quotes">
+ <div class="quote"><span class="stars">★★★★★</span><p>Ordered a laptop on Monday, had it by Wednesday. Exactly as described.</p><b>Ayesha K., Lahore</b></div>
+ <div class="quote"><span class="stars">★★★★★</span><p>The headphones are great and support helped me pick the right model.</p><b>Hamza R., Karachi</b></div>
+ <div class="quote"><span class="stars">★★★★☆</span><p>Fair prices and easy returns. My go-to store for accessories now.</p><b>Sara M., Islamabad</b></div></div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

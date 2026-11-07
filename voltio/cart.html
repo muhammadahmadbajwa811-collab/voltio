@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart | Voltio</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+<div id="site-header"></div>
+<main>
+<div class="page-head"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / <span>Cart</span></div><h1>Shopping cart</h1></div></div>
+<div class="container cart-layout"><div><div class="lines" id="cartBody"></div>
+ <form class="promo-form" id="promoForm"><input id="promo" placeholder="Promo code (try VOLT10)" aria-label="Promo code"><button class="btn btn-dark">Apply</button></form><p id="promoNote"></p></div>
+ <aside class="summary" id="summary"></aside></div>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

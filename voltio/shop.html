@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Voltio</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+<main>
+<div class="page-head"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / <span>Shop</span></div><h1 id="title">All products</h1></div></div>
+<div class="container shop-layout">
+ <aside class="sidebar" id="sidebar" aria-label="Filters">
+  <section><h4>Category</h4><div id="catList"></div></section>
+  <section><h4>Max price: <span id="priceVal">$1000</span></h4><input type="range" id="price" min="20" max="1000" step="10" value="1000" aria-label="Maximum price"></section>
+  <section><label class="opt"><input type="checkbox" id="stock"> In stock only</label></section>
+  <button class="link-btn" id="reset">Reset filters</button>
+ </aside>
+ <div><div class="shop-top"><span id="count" class="muted"></span>
+  <div><button class="btn btn-dark" id="filterBtn">Filters</button>
+  <select id="sort" aria-label="Sort products"><option value="default">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top rated</option></select></div></div>
+  <div class="grid" id="productGrid"></div>
+  <p class="empty" id="empty" hidden>No products match your filters. Try a different search or reset the filters.</p></div></div>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
